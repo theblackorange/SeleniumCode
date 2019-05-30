@@ -39,6 +39,12 @@ public class Demo {
 		driver.findElement(By.id("btn")).click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
+		//skipping the rest
+		//once the rest details are skipped, skip option gets disabled, so, this won't work again and again
+		//betwo lines should be comenteeeeeed whenever running the code
+		driver.findElement(By.xpath("//div[@id=\"app\"]/div[3]/div/div/div/div/div[2]/div/div[3]/a")).click();
+		driver.findElement(By.xpath("//div[@id=\"app\"]/div[3]/div/div/div/div/div[2]/div/div[4]/a")).click();
+		
 		//company profile
 		driver.findElement(By.xpath("//div[@class=\"ui two stackable link cards\"]/div[1]/div[2]")).click();
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
